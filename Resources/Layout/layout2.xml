@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel"
+        android:layout_marginTop="20dp">
+    <TextView
+        android:id="@+id/headerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+      android:layout_marginLeft="15dp"
+        android:text="Do you have any Trevel history ?"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:id="@+id/myRadioGroup"
+            android:layout_below="@+id/headerLabel"
+android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+          
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/americaRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+                android:textSize="15dp"
+            android:padding="5dp" />
+        <RadioButton
+            android:id="@+id/europeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+                android:textSize="15dp"
+            android:padding="5dp" />
+       
+    </RadioGroup>
+        </RelativeLayout>
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel"
+        android:id="@+id/rel1"
+        android:layout_marginTop="20dp">
+    <TextView
+        android:id="@+id/headerLabel1"
+            
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+      android:layout_marginLeft="15dp"
+        android:text="Do you have Fever?"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <RadioGroup
+       
+        android:id="@+id/myRadioGroup1"
+            android:layout_below="@+id/headerLabel1"
+android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+          
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/americaRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+                android:textSize="15dp"
+            android:padding="5dp" />
+        <RadioButton
+            android:id="@+id/europeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+                android:textSize="15dp"
+            android:padding="5dp" />
+       
+    </RadioGroup>
+        </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@+id/rel1"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:id="@+id/button1"
+        android:layout_marginRight="15dp"
+        android:background="#FF4081"/>
+</RelativeLayout>
